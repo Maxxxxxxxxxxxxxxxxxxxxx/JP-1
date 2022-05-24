@@ -1,0 +1,10 @@
+1653252287767:run
+1653253693387:console
+1653294054294:d
+1653294057427:console
+1653370934968:sbt
+1653370937944:run
+1653408071124:(for (e <- d) \n    yield e.split(",")\n      .toList\n    )\n    .filter(e => !e.contains(""))\n    .foldLeft( List[(String, List[String])]() )((acc, e) => acc :+ (e.head, e.tail))\n    .groupBy(e => e.head)\n    .mapValues(identity)\n    .toList\n    .foldLeft(List[(String, List[(Int,Double)])]()) ((acc, e) =>\n       acc :+ (\n        e(0),\n        e(1).foldLeft(List[(Int, Double)]()) ((res, l) => res :+ (l(1)(0).toInt, l(1)(2).toDouble))\n          .sortBy(_._2)\n      )\n    )
+1653408073383:console
+1653415150166:co
+1653415151215:console

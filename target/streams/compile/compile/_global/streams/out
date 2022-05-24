@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E120] Naming Error: /Users/ja/kod/JP1/kolos1/cwiczenie2/src/main/scala/Main.scala:68:4 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m68 |[0m[33mval[0m [36md[0m = io.Source[0m
+[0m[[0m[31merror[0m] [0m[0m   |    [31m^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |    Double definition:[0m
+[0m[[0m[31merror[0m] [0m[0m   |    val d: List[String] in [33mpackage object[0m [35mMain$package[0m at line 47 and[0m
+[0m[[0m[31merror[0m] [0m[0m   |    val d: List[String] in [33mpackage object[0m [35mMain$package[0m at line 68[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
